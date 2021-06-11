@@ -1,0 +1,27 @@
+/* width */
+::-webkit-scrollbar 
+	{ height: 12px;width: 12px;}
+  
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px #e6edff; 
+	border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background:linear-gradient(transparent, #F3F6FD); 
+	border-radius: 6px;
+
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background:linear-gradient(transparent, #afadd8); 
+  }
+
+
+
+
+
