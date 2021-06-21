@@ -83,19 +83,21 @@ export class Register extends React.Component {
                     onChange={e => this.state.email = e.target.value} />
 
                 </div>
+                <div className="loginF">
+                  <label htmlFor="Type" className="space">Register As:</label>
+                  <select onChange={e => this.state.type = e.target.value} name="type" id="type" className="selectRegister">
+                   
+                    <option className="none" value="ENCADRENT">Encadrant</option>
+                    <option className="none" value="ETUDIANT">Etudiant</option>
+                  </select>
+                </div>
+
                 <div className="form-group">
                   <label htmlFor="password">Password</label>
                   <input type="text" name="password" placeholder="password"
                     onChange={e => this.state.password = e.target.value} />
                 </div>
-                <div className="form-group">
-                  <label htmlFor="Type">Type</label>
-                  <select onChange={e => this.state.type = e.target.value} name="type" id="type">
-                    <option >Select you Zmla</option>
-                    <option value="ENCADRENT">ENCADRENT</option>
-                    <option value="ETUDIANT">ETUDIANT</option>
-                  </select>
-                </div>
+              
                 <div className="form-group">
                   <label htmlFor="password_confime">Confirm Password</label>
                   <input type="text" name="password_confime" placeholder="confirm Password"

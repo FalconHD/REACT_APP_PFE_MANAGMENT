@@ -1,51 +1,51 @@
 export const userData = [
     {
       name: "Jan",
-      "Active User": 4000,
+      "Groupes Activites": 0,
     },
     {
       name: "Feb",
-      "Active User": 3000,
+      "Groupes Activites": 1000,
     },
     {
       name: "Mar",
-      "Active User": 5000,
+      "Groupes Activites": 3000,
     },
     {
       name: "Apr",
-      "Active User": 4000,
+      "Groupes Activites": 4000,
     },
     {
       name: "May",
-      "Active User": 3000,
+      "Groupes Activites": 3000,
     },
     {
       name: "Jun",
-      "Active User": 2000,
+      "Groupes Activites": 2000,
     },
     {
       name: "Jul",
-      "Active User": 4000,
+      "Groupes Activites": 4000,
     },
     {
       name: "Agu",
-      "Active User": 3000,
+      "Groupes Activites": 3000,
     },
     {
       name: "Sep",
-      "Active User": 4000,
+      "Groupes Activites": 4000,
     },
     {
       name: "Oct",
-      "Active User": 1000,
+      "Groupes Activites": 1000,
     },
     {
       name: "Nov",
-      "Active User": 4000,
+      "Groupes Activites": 1000,
     },
     {
       name: "Dec",
-      "Active User": 3000,
+      "Groupes Activites": 0,
     },
   ];
 
@@ -67,57 +67,69 @@ export const userData = [
   export const userRows = [
     {
       id: 1,
-      username: "Jon Snow",
+      username: "Abdessamad Aloin",
       avatar:
         "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       email: "jon@gmail.com",
       status: "active",
-      transaction: "$120.00",
+      transaction: "Zg1233",
+      numberPhone:"06343537",
+      leRole:"Etudiant"
     },
     {
       id: 2,
-      username: "Jon Snow",
+      username: "Imane Bitch",
       avatar:
         "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       email: "jon@gmail.com",
       status: "active",
-      transaction: "$120.00",
+      transaction: "DS2364",
+      numberPhone:"06345737",
+      leRole:"Etudiant"
     },
     {
       id: 3,
-      username: "Jon Snow",
+      username: "Saad Ouzgar",
       avatar:
         "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       email: "jon@gmail.com",
       status: "active",
-      transaction: "$120.00",
+      transaction: "KJ983",
+      numberPhone:"063346584",
+      leRole:"Encadrant"
     },
     {
       id: 4,
-      username: "Jon Snow",
+      username: "Mohamed Boudda",
       avatar:
         "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       email: "jon@gmail.com",
       status: "active",
-      transaction: "$120.00",
+      transaction: "SD4532",
+      numberPhone:"0634679",
+      leRole:"Etudiant"
     },
     {
       id: 5,
-      username: "Jon Snow",
+      username: "Ilyass khadrouni",
       avatar:
         "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       email: "jon@gmail.com",
       status: "active",
-      transaction: "$120.00",
+      transaction: "DF8336",
+      numberPhone:"0634673637",
+      leRole:"Etudiant"
     },
     {
       id: 6,
-      username: "Jon Snow",
+      username: "Othman Agi",
       avatar:
         "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       email: "jon@gmail.com",
       status: "active",
-      transaction: "$120.00",
+      transaction: "KG2378",
+      numberPhone:"06373543537",
+      leRole:"Encadrant"
     },
     {
       id: 7,
@@ -126,7 +138,9 @@ export const userData = [
         "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       email: "jon@gmail.com",
       status: "active",
-      transaction: "$120.00",
+      transaction: "NF2783",
+      numberPhone:"0647346445",
+      leRole:"Etudiant"
     },
     {
       id: 8,
@@ -135,7 +149,9 @@ export const userData = [
         "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       email: "jon@gmail.com",
       status: "active",
-      transaction: "$120.00",
+      transaction: "DF9274",
+      numberPhone:"06769534857",
+      leRole:"Etudiant"
     },
     {
       id: 9,
@@ -144,7 +160,9 @@ export const userData = [
         "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       email: "jon@gmail.com",
       status: "active",
-      transaction: "$120.00",
+      transaction: "HG9826",
+      numberPhone:"06345135",
+      leRole:"Encadrant"
     },
     {
       id: 10,
@@ -153,99 +171,106 @@ export const userData = [
         "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       email: "jon@gmail.com",
       status: "active",
-      transaction: "$120.00",
+      transaction: "KJ8692",
+      numberPhone:"06346234234",
+      leRole:"Etudiant"
     },
   ];
 
   export const productRows = [
     {
       id: 1,
-      name: "Apple Airpods",
+      name: "Gestion Projet",
       img:
-        "https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      stock: 123,
+        "https://bubbleplan.net/blog/wp-content/uploads/2018/03/OLAZ6A0.jpg",
+        NBGroup: 3,
       status: "active",
-      price: "$120.00",
+      price: "abdessamadPas",
+      encadr:"hasan"
+      
     },
     {
       id: 2,
-      name: "Apple Airpods",
+      name: "Gestion Projet",
       img:
-        "https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        "https://bubbleplan.net/blog/wp-content/uploads/2018/03/OLAZ6A0.jpg",
       stock: 123,
+      NBGroup: 2,
       status: "active",
-      price: "$120.00",
+      price: "abdessamadPas",
+      wewe:"abdessamad chaymae firdaws",
     },
     {
       id: 3,
-      name: "Apple Airpods",
+      name: "Gestion Projet",
       img:
-        "https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      stock: 123,
+        "https://bubbleplan.net/blog/wp-content/uploads/2018/03/OLAZ6A0.jpg",
+        NBGroup: 2,
       status: "active",
-      price: "$120.00",
+      price: "abdessamadPas",
+      wewe:"abdessamad chaymae firdaws",
     },
     {
       id: 4,
-      name: "Apple Airpods",
+      name: "Gestion Projet",
       img:
-        "https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      stock: 123,
+        "https://bubbleplan.net/blog/wp-content/uploads/2018/03/OLAZ6A0.jpg",
+        NBGroup: 2,
       status: "active",
-      price: "$120.00",
+      price: "abdessamadPas",
     },
     {
       id: 5,
-      name: "Apple Airpods",
+      name: "Gestion Projet",
       img:
-        "https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      stock: 123,
+        "https://bubbleplan.net/blog/wp-content/uploads/2018/03/OLAZ6A0.jpg",
+        NBGroup: 3,
       status: "active",
-      price: "$120.00",
+      price: "abdessamadPas",
     },
     {
       id: 6,
-      name: "Apple Airpods",
+      name: "Gestion Projet",
       img:
-        "https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      stock: 123,
+        "https://bubbleplan.net/blog/wp-content/uploads/2018/03/OLAZ6A0.jpg",
+        NBGroup: 3,
       status: "active",
-      price: "$120.00",
+      price: "abdessamadPas",
     },
     {
       id: 7,
-      name: "Apple Airpods",
+      name: "Gestion Projet",
       img:
-        "https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      stock: 123,
+        "https://bubbleplan.net/blog/wp-content/uploads/2018/03/OLAZ6A0.jpg",
+        NBGroup: 2,
       status: "active",
-      price: "$120.00",
+      price: "abdessamadPas",
     },
     {
       id: 8,
-      name: "Apple Airpods",
+      name: "Gestion Projet",
       img:
-        "https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      stock: 123,
+        "https://bubbleplan.net/blog/wp-content/uploads/2018/03/OLAZ6A0.jpg",
+        NBGroup: 3,
       status: "active",
-      price: "$120.00",
+      price: "abdessamadPas",
     },
     {
       id: 9,
-      name: "Apple Airpods",
+      name: "Gestion Projet",
       img:
-        "https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      stock: 123,
+        "https://bubbleplan.net/blog/wp-content/uploads/2018/03/OLAZ6A0.jpg",
+        NBGroup: 2,
       status: "active",
-      price: "$120.00",
+      price: "abdessamadPas",
     },
     {
       id: 10,
-      name: "Apple Airpods",
+      name: "Gestion Projet",
       img:
-        "https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      stock: 123,
+        "https://bubbleplan.net/blog/wp-content/uploads/2018/03/OLAZ6A0.jpg",
+        NBGroup: 3,
       status: "active",
-      price: "$120.00",
+      price: "abdessamadPas",
     },
   ];

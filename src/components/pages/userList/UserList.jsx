@@ -16,8 +16,8 @@ export default function UserList() {
     { field: "id", headerName: "ID", width: 90 },
     {
       field: "user",
-      headerName: "User",
-      width: 200,
+      headerName: "Nom et Prenom",
+      width: 280,
       renderCell: (params) => {
         return (
           <div className="userListUser">
@@ -27,32 +27,42 @@ export default function UserList() {
         );
       },
     },
-    { field: "email", headerName: "Email", width: 200 },
+    { field: "email", headerName: "Email", width: 300 },
     {
       field: "status",
       headerName: "Status",
-      width: 120,
+      width: 150,
     },
     {
       field: "transaction",
-      headerName: "Transaction Volume",
-      width: 160,
+      headerName: "CIN",
+      width: 220,
+    },
+    {
+      field: "numberPhone",
+      headerName: "number Phone",
+      width: 220,
+    },
+    {
+      field: "leRole",
+      headerName: "le role",
+      width: 120,
     },
     {
       field: "action",
       headerName: "Action",
-      width: 150,
+      width: 350,
       renderCell: (params) => {
         return (
-          <>
-            <Link to={"/user/" + params.row.id}>
+          <div className="class">
+            <Link to={"/dashdirecteur/user/" + params.row.id}>
               <button className="userListEdit">Edit</button>
             </Link>
             <DeleteOutline
               className="userListDelete"
               onClick={() => handleDelete(params.row.id)}
             />
-          </>
+          </div>
         );
       },
     },
@@ -60,13 +70,14 @@ export default function UserList() {
 
   return (
     <div className="userList">
+    <div class="headerr"><div class="app-content-header"><h1 class="app-content-headerText">Les Utilisateurs</h1></div></div>
       <DataGrid
         rows={data}
         disableSelectionOnClick
         columns={columns}
-        pageSize={8}
+        pageSize={7}
         checkboxSelection
-      />
+      className="wewe3" />
     </div>
   );
 }

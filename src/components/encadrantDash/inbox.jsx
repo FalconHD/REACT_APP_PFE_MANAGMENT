@@ -1,6 +1,9 @@
+import PopupTask from "./popupTask"
+import { useState } from "react";
 const Inbox = () => {
-    return ( 
-       
+       const[button,setButton]=useState(false);  
+       return ( 
+  <div>
         <div className="containerr">
 
     
@@ -22,7 +25,7 @@ const Inbox = () => {
          </div>
          <img src="https://assets.codepen.io/3364143/Screen+Shot+2020-08-01+at+12.24.16.png" alt="" className="members mail-members"/>
         </div>
-        <div className="msg anim-y">
+        <div className=" msg selected-bg  msg anim-y">
          <input type="checkbox" name="msg" id="mail2" className="mail-choice"/>
          <label for="mail2"></label>
          <div className="msg-content">
@@ -86,14 +89,29 @@ const Inbox = () => {
          <img src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="" className="members mail-members"/>
         </div>
        </div>
-       <div className="add-task">
-        <button className="add-button">Add task</button>
-       </div>
+
+
+
+
+
+ 
+
+
+
+
+       <div className="add-task" >
+        <button className="add-button" onClick={()=>setButton(true)}>Add task</button>
+      </div>
+      <PopupTask wewe={button} setWewe={setButton}></PopupTask>
+
+
+
+
       </div>
       <div className="mail-detail">
        <div className="mail-detail-header">
         <div className="mail-detail-profile">
-         <img src="https://assets.codepen.io/3364143/Screen+Shot+2020-08-01+at+12.24.16.png" alt="" className="members inbox-detail" />
+         <img src="https://image.shutterstock.com/image-photo/portrait-smiling-young-college-student-260nw-1192615495.jpg" alt="" className="members inbox-detail" />
          <div className="mail-detail-name">abdou pas</div>
         </div>
         <div className="mail-icons">
@@ -178,9 +196,14 @@ const Inbox = () => {
         </div>
        </div>
       </div>
+       
      
+
      </div>
-   
+    
+
+
+</div>
     
      );
 }

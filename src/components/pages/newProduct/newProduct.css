@@ -1,5 +1,9 @@
 .newProduct {
-  flex: 4;
+  flex: 4 1;
+  background-color: #ffffff;
+  border-radius: 32px;
+  padding: 16px;
+  margin-right: 12px;
 }
 
 .addProductForm {
@@ -7,10 +11,22 @@
 }
 
 .addProductItem {
+  margin-right: 140px;
   width: 250px;
+  margin-left: 32px;
   display: flex;
   flex-direction: column;
+  /* border: none; */
   margin-bottom: 10px;
+}
+.flex{
+  margin-top: 52px;
+  display: flex;
+
+}
+.create{
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .addProductItem > label {
@@ -21,18 +37,24 @@
 
 .addProductItem > input {
   padding: 10px;
+    border: none;
+    border-bottom: 1px solid;
 }
 
 .addProductItem > select {
   padding: 10px;
+  border: none;
+  border-bottom: 2px solid;
 }
 
 .addProductButton {
-  margin-top: 10px;
-  padding: 7px 10px;
+  margin-top: 62px;
+  margin-right: 51px;
+  padding: 13px 37px;
+  letter-spacing: 1px;
   border: none;
-  border-radius: 10px;
-  background-color: darkblue;
+  border-radius: 11px;
+  background-color: #1ea5fc;
   color: white;
   font-weight: 600;
   cursor: pointer;

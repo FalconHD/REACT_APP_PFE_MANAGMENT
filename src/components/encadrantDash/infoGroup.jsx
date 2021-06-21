@@ -1,5 +1,6 @@
 import React from 'react'
-const InfoGroup = () => {
+const InfoGroup = (props) => {
+  console.log(props.group);
     return ( 
         <div class="test">
   <div class="task-managerr">Gestion PFE</div>
@@ -10,7 +11,7 @@ const InfoGroup = () => {
     
      <div class="side-wrapper">
       <div class="user-profile">
-       <img src="https://assets.codepen.io/3364143/Screen+Shot+2020-08-01+at+12.24.16.png" alt="" class="user-photo"/>
+       <img src="https://image.shutterstock.com/image-photo/portrait-smiling-young-college-student-260nw-1192615495.jpg" alt="" class="user-photo"/>
        <div class="user-name">abdou pas</div>
        <div class="user-mail">jacob.khan457@gmail.com</div>
       </div>

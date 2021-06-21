@@ -1,5 +1,9 @@
-import React,{useState} from 'react';
+
+import Popup from './model';
 import Modal from './model';
+
+import React,{useState} from 'react';
+import {Link} from 'react-router-dom';
 
 const HeaderEnDash = () => {
   const[showModal,setShowModal]=useState(false)
@@ -11,11 +15,12 @@ const HeaderEnDash = () => {
   const themeToggler = () => {
     theme === "light" ? setTheme("dark") : setTheme("light");
   };
+
     return (  
       <div class="app-header">
        <div class="app-header-left">
         <span class="app-icon"></span>
-        <p class="app-name">Mon Projet</p>
+        <Link to="/"><p class="app-name">Mon Projet</p></Link>
         <div class="search-wrapper">
           <input class="search-input" type="text" placeholder="Search"/>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-search" viewBox="0 0 24 24">
@@ -36,15 +41,12 @@ const HeaderEnDash = () => {
 
 
 
-        <button class="add-btn" title="Add New Project" onClick={openModal}>
+        <button class="add-btn" title="Add New Project" >
           <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
             <line x1="12" y1="5" x2="12" y2="19" />
             <line x1="5" y1="12" x2="19" y2="12" /></svg>
         </button>
-        
-        <Modal showModel={showModal} setShowModal={setShowModal}/>
-
-
+    
 
 
 

@@ -9,7 +9,7 @@ const  HeaderStud= () => {
             <div class="app-header">
              <div class="app-header-left">
               <span class="app-icon"></span>
-              <p class="app-name">FSTH Projects</p>
+              <p class="app-name">Mon Projet</p>
               <div class="search-wrapper">
                 <input class="search-input" type="text" placeholder="Search"/>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-search" viewBox="0 0 24 24">

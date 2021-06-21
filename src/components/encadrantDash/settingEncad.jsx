@@ -119,33 +119,34 @@ const SettingEncad = () => {
   
  
 <div className="tr">
-
+       <div className="fromsetting">
 
 <form className={classes.root} noValidate autoComplete="off">
+
       <TextField id="standard-basic" label="First name" />
   
     </form>
-      <div>No results.<br />Please try another search term.</div>
+      </div>
 
 	
-		
+      <div className="fromsetting">
 <form noValidate autoComplete="off">
     <TextField
     label="Last name"
     />
-</form>
+</form></div>
 
-<div>No results.<br />Please try another search term.</div>
-  	
+
       <div>
       
-    
+      <div className="fromsetting">
        <form className={classes.root} noValidate autoComplete="off">
       <TextField id="standard-basic" label="Project name" />
   
-    </form>
+    </form></div>
     
-    </div>  
+    </div> 
+    <div className="fromsetting"> 
  <FormControl className={classes.formControl}>
         <InputLabel id="demo-mutiple-name-label">Filier</InputLabel>
         <Select
@@ -163,18 +164,15 @@ const SettingEncad = () => {
             </MenuItem>
           ))}
         </Select>
-      </FormControl>
-      <div>No results.<br />Please try another search term.</div>
-      <form className={classes.root} noValidate autoComplete="off">
+      </FormControl></div>
+      <div className="fromsetting">  <div className="fromsetting"></div> <form className={classes.root} noValidate autoComplete="off">
       <TextField id="standard-basic" label=" Number phone" />
   
-    </form>
-      <div>No results.<br />Please try another search term.</div>
-      <form className={classes.root} noValidate autoComplete="off">
+    </form></div>
+    <div className="fromsetting"><form className={classes.root} noValidate autoComplete="off">
       <TextField id="standard-basic" label="CNE" />
   
-    </form>
-      <div>No results.<br />Please try another search term.</div>
+    </form></div>
 
 	
 	<label className="label" for="textarea">Description <p id="count"></p></label> 

@@ -119,8 +119,8 @@ button {
     align-self: flex-end;
 }
 .top-part svg {
-    width: 14px;
-    height: 14px;
+    width: 23px;
+    height: 23px;
     color: var(--main-color);
     margin-right: 14px;
 }
@@ -600,11 +600,7 @@ label .label-text:before {
     flex-wrap: wrap;
 }
   
-  h1 {
-    margin: 32px 0;
-    color: #031c98;
-    font-size: 24px;
-  }
+  
   
   .complete {
     text-decoration: line-through;
@@ -617,10 +613,10 @@ label .label-text:before {
   
   .todo-input {
     padding: 14px 32px 14px 16px;
-    border-radius: 4px 0 0 4px;
-    border: 2px solid #17161a;
+    border-radius: 9px;
+    border:2px solid #7454d2;
     outline: none;
-    width: 320px;
+    width: 386px;
     background: transparent;
     color: rgb(29, 26, 26);
   }
@@ -631,9 +627,10 @@ label .label-text:before {
   
   .todo-button {
     padding: 16px;
-    margin-top:15px;
+    margin-top: 15px;
+    margin-left: 23px;
     border: none;
-    border-radius: 0 4px 4px 0;
+    border-radius: 8px;
     cursor: pointer;
     outline: none;
     background: #661FFF;
@@ -668,36 +665,36 @@ label .label-text:before {
     color: #fff;
     background: linear-gradient(
       90deg,
-#0050FF 0%,
-      #00F0FF 100%
+#0051ffab 0%,
+      #00eeffb2 100%
     );
   
     padding: 16px;
-    border-radius: 5px;
-    width: 90%;
+    border-radius: 10px;
+    width: 100%;
   }
   
   .todo-row:nth-child(4n + 1) {
     background: linear-gradient(
       90deg,
-     #00BF58  0%,
-       #00D1FF 100%
+     #00bf59bb  0%,
+       #00d0ffa8 100%
     );
   }
   
   .todo-row:nth-child(4n + 2) {
     background: linear-gradient(
       90deg,
-      #6E00FF 0%,
-      #7501FE 100%
+      #6f00ffa1 0%,
+      #7701fea1 100%
     );
   }
   
   .todo-row:nth-child(4n + 3) {
     background: linear-gradient(
       90deg,
-      #FF4D00 0%,
-      #FFE600 100%
+      #ff4d00b2 0%,
+      #ffe6009a 100%
     );
   }
   
@@ -715,4 +712,9 @@ label .label-text:before {
   
   .edit-icon {
     color: #fff;
+  }
+
+  .addtask{
+      display: flex;
+      flex-direction: unset;
   }

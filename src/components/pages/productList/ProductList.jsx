@@ -16,7 +16,7 @@ export default function ProductList() {
     { field: "id", headerName: "ID", width: 90 },
     {
       field: "product",
-      headerName: "Product",
+      headerName: "Nom de Projet ",
       width: 200,
       renderCell: (params) => {
         return (
@@ -27,7 +27,15 @@ export default function ProductList() {
         );
       },
     },
-    { field: "stock", headerName: "Stock", width: 200 },
+    { field: "NBGroup", headerName: "NB group", width: 150 },
+   
+   
+    {
+      field: "wewe",
+      headerName: "mombres groupe",
+      width: 360,
+    },
+   
     {
       field: "status",
       headerName: "Status",
@@ -35,7 +43,12 @@ export default function ProductList() {
     },
     {
       field: "price",
-      headerName: "Price",
+      headerName: " Team Leader ",
+      width: 260,
+    },
+    {
+      field: "encadr",
+      headerName: "Encadré Par",
       width: 160,
     },
     {
@@ -44,15 +57,15 @@ export default function ProductList() {
       width: 150,
       renderCell: (params) => {
         return (
-          <>
-            <Link to={"/product/" + params.row.id}>
+          <div>
+            <Link to={"/dashdirecteur/project/" + params.row.id}>
               <button className="productListEdit">Edit</button>
             </Link>
             <DeleteOutline
               className="productListDelete"
               onClick={() => handleDelete(params.row.id)}
             />
-          </>
+          </div>
         );
       },
     },
@@ -60,12 +73,14 @@ export default function ProductList() {
 
   return (
     <div className="productList">
+        <div class="headerr"><div class="app-content-header"><h1 class="app-content-headerText">Les Projets</h1></div></div>
+
       <DataGrid
         rows={data}
         disableSelectionOnClick
         columns={columns}
         pageSize={8}
-        checkboxSelection
+        checkboxSelection className="bordernone"
       />
     </div>
   );

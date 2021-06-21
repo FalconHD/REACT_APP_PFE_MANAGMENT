@@ -26,22 +26,22 @@ const Dashdirecteur = () => {
           <Route exact path="/dashdirecteur">
             <Home />
           </Route>
-          <Route path="/dashdirecteur/users">
+          <Route exact path="/dashdirecteur/users">
             <UserList />
           </Route>
-          <Route path="/dashdirecteur/user/:userId">
+          <Route exact path="/dashdirecteur/user/:userId">
             <User />
           </Route>
-          <Route path="/dashdirecteur/newUser">
+          <Route exact path="/dashdirecteur/newUser">
             <NewUser />
           </Route>
-          <Route path="/dashdirecteur/products">
+          <Route exact path="/dashdirecteur/project">
             <ProductList />
           </Route>
-          <Route path="/dashdirecteur/product/:productId">
+          <Route exact path="/dashdirecteur/project/:productId">
             <Product />
           </Route>
-          <Route path="/dashdirecteur/newproduct">
+          <Route exact path="/dashdirecteur/newproject">
             <NewProduct />
           </Route>
         </Switch>

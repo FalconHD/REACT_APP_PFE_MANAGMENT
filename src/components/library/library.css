@@ -185,22 +185,23 @@
 	 overflow: hidden;
 	 height: 40px;
 }
- .search-input {
-	 border-radius: 0;
-	 appearance: none;
-	 box-shadow: none;
-	 border-left: none;
-	 border-right: none;
-	 background-color: var(--search-bg);
-	 flex: 1;
-	 border: 1px solid var(--main-border-color);
-	 padding: 0 8px;
-	 font-size: 16px;
-	 font-weight: 500;
-	 white-space: nowrap;
-	 overflow: hidden;
-	 text-overflow: ellipsis;
-	 width: 100%;
+ .search-inputtt {
+	border-radius: 32px;
+    -webkit-appearance: none;
+    appearance: none;
+    box-shadow: none;
+    /* border-left: none; */
+    /* border-right: none; */
+    background-color: var(--search-bg);
+    flex: 1 1;
+    border: none;
+    padding: 0 8px;
+    font-size: 16px;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
 }
  .dark .search-input {
 	 border-color: var(--search-bg);
@@ -232,9 +233,15 @@
  .dark .search-btn {
 	 border: none;
 }
- .app-actions-line {
-	 display: flex;
-	 align-items: center;
+ .app-actions-linee {
+	display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 12px 8px 0px 0px;
+    background-color: white;
+    border-radius: 32px;
+    align-content: center;
 
 }
  .contact-actions {
@@ -337,12 +344,12 @@
 	 margin-right: 32px;
 	 color: var(--main-font-color);
 }
- .app-main {
-	 flex: 1;
-	 overflow: hidden;
-	 padding: 24px 40px;
-	 display: flex;
-	 justify-content: space-between;
+ .app-mainn {
+	flex: 1 1;
+    overflow: hidden;
+    padding: 22px 8px 0px 0px;
+    display: flex;
+    justify-content: space-between;
 }
  .cards-area {
 	 background-color: #FFFFFF;

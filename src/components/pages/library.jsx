@@ -11,7 +11,7 @@ const Library = () => {
       
              <HeaderLib />
      
-        <section className="app-main">
+        <section className="app-mainn">
          <AppMainLeft/>
        <AppMainRight/>
        

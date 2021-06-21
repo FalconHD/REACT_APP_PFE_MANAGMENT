@@ -4,7 +4,7 @@ import { ArrowDownward, ArrowUpward } from "@material-ui/icons";
 export default function FeaturedInfo() {
   return (
     <div className="featured">
-      <div className="featuredItem">
+      <div className="featuredItem1">
         <span className="featuredTitle">Tous Les Projets</span>
         <div className="featuredMoneyContainer">
           <span className="featuredMoney">13 </span>
@@ -12,7 +12,7 @@ export default function FeaturedInfo() {
         </div>
         <span className="featuredSub">Cette Annee</span>
       </div>
-      <div className="featuredItem">
+      <div className="featuredItem2">
         <span className="featuredTitle">Nomber Des Etudiants</span>
         <div className="featuredMoneyContainer">
           <span className="featuredMoney">84</span>
@@ -20,7 +20,7 @@ export default function FeaturedInfo() {
         </div>
         <span className="featuredSub">Cette Annee</span>
       </div>
-      <div className="featuredItem">
+      <div className="featuredItem3">
         <span className="featuredTitle">Nomber des encadrants</span>
         <div className="featuredMoneyContainer">
           <span className="featuredMoney">14</span>

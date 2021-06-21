@@ -14,20 +14,25 @@ const Header = () => {
     
     return ( 
         <header id="header" class="header">
-        <img src={logo }  class="logo" alt="projects " id="header-img" />
+           <div class="app-header-left">
+              <span class="app-icon"></span>
+              <p class="app-name">Mon Projet</p>
+            
+            </div>
+        
         <nav id="nav-bar" class="nav">
           <ul class="nav-list">
-            <li class="nav-item">
-              <a class="nav-link" href="#features">Features</a>
+            <li class="nav-items">
+              <a class="nav-links" href="#features">Features</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#how-it-works">How It Works</a>
+            <li class="nav-items">
+              <a class="nav-links" href="#how-it-works">How It Works</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#get-started">Get Started</a>
+            <li class="nav-items">
+              <a class="nav-links" href="#get-started">Get Started</a>
             </li>
-            <li class="nav-item">
-            <Link to="/singin"><a class="nav-link nav-link-cta" href="">Login</a></Link>
+            <li class="nav-items">
+            <Link to="/singin"><a class="nav-links nav-link-cta" href="">Login</a></Link>
             </li>
           </ul>
         </nav>

@@ -1,13 +1,18 @@
 import InfoGroup from "./infoGroup"
 import MainArea from "./mainArea"
 
-const Connection = () => {
+import { useLocation } from "react-router";
+
+const Connection = (props) => {
+    const location = useLocation()
+    const {group} = location.state 
+    console.log(group);
     return (  
         <div className="containerr">
         
-        <InfoGroup/>
+        <InfoGroup group={group}/>
 
-        <MainArea/>
+        <MainArea group={group}/>
 
 
         </div>

@@ -61,7 +61,7 @@ export class Login extends React.Component {
               <form onSubmit={this.handleSubmit}>
                 <div className="form-group">
                   <label htmlFor="username">Email</label>
-                  <input type="text" name="username" placeholder="username"
+                  <input type="text" name="username" placeholder="Email"
                     onChange={e => this.email = e.target.value}
                   />
                 </div>

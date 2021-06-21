@@ -1,5 +1,20 @@
 .productList{
+      flex: 4;
+  display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: hidden;
+    margin-right: 10px;
+    border-radius: 32px;
+    background-color: white;
     flex: 4;
+    display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      overflow: hidden;
+      margin-right: 10px;
+      border-radius: 32px;
+      background-color: white;
 }
 
 .productListItem{
@@ -28,4 +43,11 @@
 .productListDelete{
     color: red;
     cursor: pointer;
+}
+.bordernone{
+    background-color: white;
+    border-radius: 32px !important;
+    border: none !important;
+    padding: 12px;
+    margin-right: 12px;
 }

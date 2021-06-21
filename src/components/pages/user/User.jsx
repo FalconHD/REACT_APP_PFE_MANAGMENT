@@ -14,7 +14,7 @@ export default function User() {
     <div className="user">
       <div className="userTitleContainer">
         <h1 className="userTitle">Edit User</h1>
-        <Link to="/newUser">
+        <Link to="/dashdirecteur/newUser">
           <button className="userAddButton">Create</button>
         </Link>
       </div>
@@ -27,32 +27,32 @@ export default function User() {
               className="userShowImg"
             />
             <div className="userShowTopTitle">
-              <span className="userShowUsername">Anna Becker</span>
-              <span className="userShowUserTitle">Software Engineer</span>
+              <span className="userShowUsername">Abdessamad aalouwan </span>
+              <span className="userShowUserTitle">Mi Etudiant </span>
             </div>
           </div>
           <div className="userShowBottom">
             <span className="userShowTitle">Account Details</span>
             <div className="userShowInfo">
-              <PermIdentity className="userShowIcon" />
-              <span className="userShowInfoTitle">annabeck99</span>
+              <PermIdentity className="userShowIcons" />
+              <span className="userShowInfoTitle">AbdessamdPas</span>
             </div>
             <div className="userShowInfo">
-              <CalendarToday className="userShowIcon" />
-              <span className="userShowInfoTitle">10.12.1999</span>
+              <CalendarToday className="userShowIcons" />
+              <span className="userShowInfoTitle">31.10.1999</span>
             </div>
             <span className="userShowTitle">Contact Details</span>
             <div className="userShowInfo">
-              <PhoneAndroid className="userShowIcon" />
-              <span className="userShowInfoTitle">+1 123 456 67</span>
+              <PhoneAndroid className="userShowIcons" />
+              <span className="userShowInfoTitle">+212636183856</span>
             </div>
             <div className="userShowInfo">
-              <MailOutline className="userShowIcon" />
-              <span className="userShowInfoTitle">annabeck99@gmail.com</span>
+              <MailOutline className="userShowIcons" />
+              <span className="userShowInfoTitle">Abdessamad.aalouwan@gmail.com</span>
             </div>
             <div className="userShowInfo">
-              <LocationSearching className="userShowIcon" />
-              <span className="userShowInfoTitle">New York | USA</span>
+              <LocationSearching className="userShowIcons" />
+              <span className="userShowInfoTitle">boukidarn | Morroco</span>
             </div>
           </div>
         </div>
@@ -64,7 +64,7 @@ export default function User() {
                 <label>Username</label>
                 <input
                   type="text"
-                  placeholder="annabeck99"
+                  placeholder="AbdessamadPas"
                   className="userUpdateInput"
                 />
               </div>
@@ -72,7 +72,7 @@ export default function User() {
                 <label>Full Name</label>
                 <input
                   type="text"
-                  placeholder="Anna Becker"
+                  placeholder="Abdessamad AAlouwan"
                   className="userUpdateInput"
                 />
               </div>
@@ -80,7 +80,7 @@ export default function User() {
                 <label>Email</label>
                 <input
                   type="text"
-                  placeholder="annabeck99@gmail.com"
+                  placeholder="Abdessamad.Aalouwan@gmail.com"
                   className="userUpdateInput"
                 />
               </div>
@@ -88,7 +88,7 @@ export default function User() {
                 <label>Phone</label>
                 <input
                   type="text"
-                  placeholder="+1 123 456 67"
+                  placeholder="+212 636 183 856"
                   className="userUpdateInput"
                 />
               </div>
@@ -96,7 +96,7 @@ export default function User() {
                 <label>Address</label>
                 <input
                   type="text"
-                  placeholder="New York | USA"
+                  placeholder="Boukidarn | Morocco"
                   className="userUpdateInput"
                 />
               </div>
@@ -105,7 +105,7 @@ export default function User() {
               <div className="userUpdateUpload">
                 <img
                   className="userUpdateImg"
-                  src="https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                  src="https://scontent.frba3-2.fna.fbcdn.net/v/t1.6435-9/45407887_2237402243195804_2494665821838639104_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=8bfeb9&_nc_eui2=AeE0RQWDvbubVyHtIwdC5Ai8CfyQTgvCmiAJ_JBOC8KaIKjcSHopNWzJve2ABhYqKru30lLkriECPq05ni1Fbxt1&_nc_ohc=Awufj_SDX5QAX8Wpypt&_nc_ht=scontent.frba3-2.fna&oh=ea5a0f659a9474eb6dda2d5cc86b985e&oe=60C917D3"
                   alt=""
                 />
                 <label htmlFor="file">

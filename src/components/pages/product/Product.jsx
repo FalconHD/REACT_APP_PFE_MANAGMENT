@@ -8,8 +8,8 @@ export default function Product() {
   return (
     <div className="product">
       <div className="productTitleContainer">
-        <h1 className="productTitle">Product</h1>
-        <Link to="/newproduct">
+        <h1 className="productTitle">Projet</h1>
+        <Link to={"/dashdirecteur/newproject"}>
           <button className="productAddButton">Create</button>
         </Link>
       </div>
@@ -19,8 +19,8 @@ export default function Product() {
           </div>
           <div className="productTopRight">
               <div className="productInfoTop">
-                  <img src="https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" className="productInfoImg" />
-                  <span className="productName">Apple Airpods</span>
+                  <img src="https://bubbleplan.net/blog/wp-content/uploads/2018/03/OLAZ6A0.jpg" alt="" className="productInfoImg" />
+                  <span className="productName">Gestion Des Projets</span>
               </div>
               <div className="productInfoBottom">
                   <div className="productInfoItem">
@@ -28,16 +28,16 @@ export default function Product() {
                       <span className="productInfoValue">123</span>
                   </div>
                   <div className="productInfoItem">
-                      <span className="productInfoKey">sales:</span>
-                      <span className="productInfoValue">5123</span>
+                      <span className="productInfoKey">Nomber de groupe:</span>
+                      <span className="productInfoValue">3</span>
                   </div>
                   <div className="productInfoItem">
                       <span className="productInfoKey">active:</span>
                       <span className="productInfoValue">yes</span>
                   </div>
                   <div className="productInfoItem">
-                      <span className="productInfoKey">in stock:</span>
-                      <span className="productInfoValue">no</span>
+                      <span className="productInfoKey">Filier:</span>
+                      <span className="productInfoValue">MI</span>
                   </div>
               </div>
           </div>
@@ -45,12 +45,14 @@ export default function Product() {
       <div className="productBottom">
           <form className="productForm">
               <div className="productFormLeft">
-                  <label>Product Name</label>
-                  <input type="text" placeholder="Apple AirPod" />
-                  <label>In Stock</label>
-                  <select name="inStock" id="idStock">
-                      <option value="yes">Yes</option>
-                      <option value="no">No</option>
+                  <label>Project Name</label>
+                  <input type="text" placeholder="  " />
+                  <label>Filier</label>
+                  <select name="inStock" id="idStock"> 
+                       <option value="no">MI</option>
+                      <option value="yes">EEA</option>
+                
+                      <option value="no">STT</option>
                   </select>
                   <label>Active</label>
                   <select name="active" id="active">
@@ -60,7 +62,7 @@ export default function Product() {
               </div>
               <div className="productFormRight">
                   <div className="productUpload">
-                      <img src="https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" className="productUploadImg" />
+                      <img src="https://bubbleplan.net/blog/wp-content/uploads/2018/03/OLAZ6A0.jpg" alt="" className="productUploadImg" />
                       <label for="file">
                           <Publish/>
                       </label>

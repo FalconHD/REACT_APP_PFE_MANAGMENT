@@ -12,7 +12,7 @@ const CalenderStudent = () => {
          </div>
          <div className="week-month">
           <button className=" button button-weekends">Weekends</button>
-          <button className=" button button-task active">Add task</button>
+          
          </div>
         </div>
         <div className="calendar-wrapper anim-y">

@@ -1,32 +1,39 @@
-.newUser {
+.new {
   flex: 4;
 }
 
 .newUserForm {
   display: flex;
+  margin-right: 12px;
   flex-wrap: wrap;
+  background-color: white;
+  border-radius: 32px;
+  padding: 9px 28px;
+  min-height: 70%;
 }
 
 .newUserItem {
   width: 400px;
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
-  margin-right: 20px;
+  margin-top: 14px;
+  margin-right: 78px;
+  font-size: 15px;
 }
 
 .newUserItem > label {
-  margin-bottom: 10px;
-  font-size: 14px;
+  margin-bottom: 15px;
+
   font-weight: 600;
-  color: rgb(151, 150, 150);
+  color: rgb(103 102 102);;
 }
 
 .newUserItem > input {
-  height: 20px;
+
   padding: 10px;
-  border: 1px solid gray;
-  border-radius: 5px;
+  border: none;
+  /* border-radius: 2px; */
+  border-bottom: 1px #c1d4ff solid;
 }
 
 .newUserGender > input {
@@ -45,13 +52,20 @@
 }
 
 .newUserButton{
-    width: 200px;
-    border: none;
-    background-color: darkblue;
-    color: white;
-    padding: 7px 10px;
-    font-weight: 600;
-    border-radius: 10px;
-    margin-top: 30px;
-    cursor: pointer;
+  width: 187px;
+  border: none;
+  background-color: #9c88ff;
+  color: white;
+  padding: 7px 10px;
+  font-weight: 600;
+  border-radius: 32px;
+  margin-top: 47px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  height: 43px;
+  font-size: 17px;
+
+}
+.newUserTitle{
+  margin-left: 30px;
 }

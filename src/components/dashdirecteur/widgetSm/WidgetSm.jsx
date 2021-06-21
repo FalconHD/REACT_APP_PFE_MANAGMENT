@@ -4,7 +4,7 @@ import { Visibility } from "@material-ui/icons";
 export default function WidgetSm() {
   return (
     <div className="widgetSm">
-      <span className="widgetSmTitle">new students</span>
+      <span className="widgetSmTitle">Nouveaux Utilisateurs</span>
       <ul className="widgetSmList">
         <li className="widgetSmListItem">
           <img
