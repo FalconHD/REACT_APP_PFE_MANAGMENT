@@ -1,17 +1,13 @@
 import InfoGroup from "../encadrantDash/infoGroup"
-import MainArea from "../encadrantDash/mainArea"
+import { useLocation } from "react-router";
 import MainStudent from "./mainStudent";
-const ConnectionStudent = () => {
-    return ( 
+const ConnectionStudent = (props) => {
+
+    return (
         <div className="containerr">
-        
-        <InfoGroup/>
-
-        <MainStudent/>
-
-
+            <InfoGroup />
+            <MainStudent />
         </div>
-     );
+    );
 }
- 
 export default ConnectionStudent;

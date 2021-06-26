@@ -3,7 +3,7 @@ import "./newProduct.css";
 export default function NewProduct() {
   return (
     <div className="newProduct">
-      <h1 className="addProductTitle">New Project</h1>
+      <h1 className="addProductTitle">Nouveau projet</h1>
       <form className="addProductForm">
         <div className="addProductItem">
           <label>Image</label>
@@ -11,7 +11,7 @@ export default function NewProduct() {
         </div>
         <div className="flex">
         <div className="addProductItem">
-          <label>Name of Project</label>
+          <label>Nom du projet</label>
           <input type="text" placeholder="Nom" />
         </div>
         <div className="addProductItem">
@@ -33,7 +33,7 @@ export default function NewProduct() {
           </select>
         </div></div>
         <div className="create">
-        <button className="addProductButton">Create</button></div>
+        <button className="addProductButton">Créer</button></div>
       </form>
     </div>
   );

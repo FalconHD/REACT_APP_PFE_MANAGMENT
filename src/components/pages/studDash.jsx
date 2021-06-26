@@ -6,6 +6,10 @@ import MainDash from '../studentDash/mainStudentDash';
 import SideBarStudent from '../studentDash/sideBarStudent';
 import '../studentDash/studentDash.css';
 import ToDoPage from '../studentDash/todoPage';
+import LibraryStudent from '../pages/librarystudent';
+import Video from '../pages/vidio'
+import SettingStudent from '../studentDash/settingStudent'
+
 
 const StudDash = () => {
     return ( 
@@ -29,6 +33,16 @@ const StudDash = () => {
                     <ToDoPage/>
 
                     </Route>
+                    <Route path="/studdash/libraryStudent">
+                            <LibraryStudent/>
+                             </Route>
+
+                    <Route path="/studdash/video">  
+              <Video/>
+               </Route>
+               <Route path="/studdash/settingStudent">  
+              <SettingStudent/>
+               </Route>
             </Switch>
             </div>
         </div>

@@ -9,6 +9,7 @@ import ListStudents from '../encadrantDash/student-list';
 import Connection from '../encadrantDash/connection';
 import SettingEncad from '../encadrantDash/settingEncad';
 import Appsidebare from '../encadrantDash/app-sidebar';
+import Video from './vidio';
 import Library from './library';
 
 
@@ -45,7 +46,9 @@ const EncadDash = () => {
                         <Route path="/encaddash/library">
                             <Library /> </Route>
 
-
+                            <Route path="/encaddash/video">  
+              <Video/>
+               </Route>
                         <Route path="/encaddash/settingEncad">
                             <SettingEncad /> </Route>
 

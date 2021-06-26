@@ -10,16 +10,16 @@ const SecFeatures = () => {
             <li>
             <img src={onlineConference} className="wewe" alt="onlineConference"/>
 
-              <p><strong>conference </strong> on a wide range on topics.</p>
+              <p><strong> conférence</strong>  sur un large éventail de sujets.</p>
             </li>
             <li>
             <img src={onlineLibrary} className="wewe" alt="onlineConference"/>
 
-              <p><strong>library</strong> from professionals .</p>
+              <p><strong>bibliothèque </strong> de professionnels .</p>
             </li>
             <li>
             <img src={communities} className="wewe" alt="onlineConference"/>
-              <p><strong>community  </strong> to help you improve your skills level.</p>
+              <p><strong>communauté   </strong> pour vous aider à améliorer votre niveau de compétences.</p>
             </li>
           </ul>
         </section>

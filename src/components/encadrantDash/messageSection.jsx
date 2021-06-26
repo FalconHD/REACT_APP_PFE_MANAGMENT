@@ -10,14 +10,14 @@ const MessageSection = () => {
         <line x1="9" y1="9" x2="15" y2="15" /></svg>
     </button>
     <div class="projects-section-header">
-      <p>students Messages</p>
+      <p>étudiants Messages</p>
     </div>
     <div class="messages">
       <div class="message-box">
         <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80" alt="profile image"/>
         <div class="message-content">
           <div class="message-header">
-            <div class="name">Stephanie</div>
+            <div class="name">A.Aalouwan </div>
             <div class="star-checkbox">
               <input type="checkbox" id="star-1"/>
               <label for="star-1">
@@ -27,7 +27,7 @@ const MessageSection = () => {
             </div>
           </div>
           <p class="message-line">
-            I got your first assignment. It was quite good. 🥳 We can continue with the next assignment.
+          J'ai votre premier devoir. C'était assez bon. 🥳 Nous pouvons continuer avec la prochaine mission.
           </p>
           <p class="message-line time">
             Dec, 12
@@ -38,7 +38,7 @@ const MessageSection = () => {
         <img src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80" alt="profile image"/>
         <div class="message-content">
           <div class="message-header">
-            <div class="name">Mark</div>
+            <div class="name">C.Assmer</div>
             <div class="star-checkbox">
               <input type="checkbox" id="star-2"/>
               <label for="star-2">
@@ -48,7 +48,7 @@ const MessageSection = () => {
             </div>
           </div>
           <p class="message-line">
-            Hey, can tell me about progress of project? I'm waiting for your response.
+          Salut, peux-tu me parler de l'avancement du projet ? J'attends votre réponse
           </p>
           <p class="message-line time">
             Dec, 12
@@ -59,7 +59,7 @@ const MessageSection = () => {
         <img src="https://images.unsplash.com/photo-1543965170-4c01a586684e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDZ8fG1hbnxlbnwwfDB8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="profile image"/>
         <div class="message-content">
           <div class="message-header">
-            <div class="name">David</div>
+            <div class="name">F.Afifi</div>
             <div class="star-checkbox">
               <input type="checkbox" id="star-3"/>
               <label for="star-3">
@@ -69,7 +69,9 @@ const MessageSection = () => {
             </div>
           </div>
           <p class="message-line">
-            Awesome! 🤩 I like it. We can schedule a meeting for the next one.
+          Impressionnant! J'aime ça. Nous pouvons programmer une réunion pour la prochaine.
+
+
           </p>
           <p class="message-line time">
             Dec, 12
@@ -80,7 +82,7 @@ const MessageSection = () => {
         <img src="https://images.unsplash.com/photo-1533993192821-2cce3a8267d1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTl8fHdvbWFuJTIwbW9kZXJufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="profile image"/>
         <div class="message-content">
           <div class="message-header">
-            <div class="name">Jessica</div>
+            <div class="name">I.Kadrouni</div>
             <div class="star-checkbox">
               <input type="checkbox" id="star-4"/>
               <label for="star-4">
@@ -90,8 +92,9 @@ const MessageSection = () => {
             </div>
           </div>
           <p class="message-line">
-            I am really impressed! Can't wait to see the final result.
-          </p>
+          Je suis vraiment impressionné ! Hâte de voir le résultat final.
+
+</p>
           <p class="message-line time">
             Dec, 11
           </p>

@@ -29,7 +29,18 @@
   }
 
 
-
+  .wewe5{
+	display: flex;
+    /* margin: 12px; */
+    /* display: flex; */
+    flex-wrap: wrap;
+    color: #c71f1f;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 3px rgba(116, 25, 25, 0.611) solid;
+    margin-right: 13px;
+}
 
 
 
@@ -337,6 +348,7 @@
 	 display: flex;
 	 justify-content: center;
 	 align-items: center;
+	 margin-left: 9px;
 }
  .filter-line-text {
 	 font-size: 14px;
@@ -724,9 +736,10 @@
 	 display: flex;
 }
  .filter-action-buttons {
-	 display: flex;
-	 overflow-x: auto;
-	 position: relative;
+	display: flex;
+    overflow-x: auto;
+    position: relative;
+    padding-top: 5px;
 }
  .filter-action-buttons button {
 	 margin-bottom: 4px;

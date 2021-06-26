@@ -13,16 +13,16 @@ export default function User() {
   return (
     <div className="user">
       <div className="userTitleContainer">
-        <h1 className="userTitle">Edit User</h1>
+        <h1 className="userTitle"> Modifier l'utilisateur</h1>
         <Link to="/dashdirecteur/newUser">
-          <button className="userAddButton">Create</button>
+          <button className="userAddButton">Créer</button>
         </Link>
       </div>
       <div className="userContainer">
         <div className="userShow">
           <div className="userShowTop">
             <img
-              src="https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+              src="https://image.shutterstock.com/image-photo/portrait-smiling-young-college-student-260nw-1192615495.jpg"
               alt=""
               className="userShowImg"
             />
@@ -32,7 +32,8 @@ export default function User() {
             </div>
           </div>
           <div className="userShowBottom">
-            <span className="userShowTitle">Account Details</span>
+            <span className="userShowTitle">Détails du compte
+</span>
             <div className="userShowInfo">
               <PermIdentity className="userShowIcons" />
               <span className="userShowInfoTitle">AbdessamdPas</span>
@@ -41,7 +42,7 @@ export default function User() {
               <CalendarToday className="userShowIcons" />
               <span className="userShowInfoTitle">31.10.1999</span>
             </div>
-            <span className="userShowTitle">Contact Details</span>
+            <span className="userShowTitle">Détails du contact</span>
             <div className="userShowInfo">
               <PhoneAndroid className="userShowIcons" />
               <span className="userShowInfoTitle">+212636183856</span>
@@ -57,7 +58,7 @@ export default function User() {
           </div>
         </div>
         <div className="userUpdate">
-          <span className="userUpdateTitle">Edit</span>
+          <span className="userUpdateTitle">Éditer</span>
           <form className="userUpdateForm">
             <div className="userUpdateLeft">
               <div className="userUpdateItem">
@@ -69,7 +70,8 @@ export default function User() {
                 />
               </div>
               <div className="userUpdateItem">
-                <label>Full Name</label>
+                <label>Nom d'utilisateur
+</label>
                 <input
                   type="text"
                   placeholder="Abdessamad AAlouwan"
@@ -77,7 +79,7 @@ export default function User() {
                 />
               </div>
               <div className="userUpdateItem">
-                <label>Email</label>
+                <label>E-mail</label>
                 <input
                   type="text"
                   placeholder="Abdessamad.Aalouwan@gmail.com"
@@ -85,7 +87,7 @@ export default function User() {
                 />
               </div>
               <div className="userUpdateItem">
-                <label>Phone</label>
+                <label>Téléphoner</label>
                 <input
                   type="text"
                   placeholder="+212 636 183 856"
@@ -93,7 +95,7 @@ export default function User() {
                 />
               </div>
               <div className="userUpdateItem">
-                <label>Address</label>
+                <label>Adresse</label>
                 <input
                   type="text"
                   placeholder="Boukidarn | Morocco"
@@ -105,15 +107,16 @@ export default function User() {
               <div className="userUpdateUpload">
                 <img
                   className="userUpdateImg"
-                  src="https://scontent.frba3-2.fna.fbcdn.net/v/t1.6435-9/45407887_2237402243195804_2494665821838639104_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=8bfeb9&_nc_eui2=AeE0RQWDvbubVyHtIwdC5Ai8CfyQTgvCmiAJ_JBOC8KaIKjcSHopNWzJve2ABhYqKru30lLkriECPq05ni1Fbxt1&_nc_ohc=Awufj_SDX5QAX8Wpypt&_nc_ht=scontent.frba3-2.fna&oh=ea5a0f659a9474eb6dda2d5cc86b985e&oe=60C917D3"
+                  src="https://image.shutterstock.com/image-photo/portrait-smiling-young-college-student-260nw-1192615495.jpg"
                   alt=""
+                
                 />
                 <label htmlFor="file">
                   <Publish className="userUpdateIcon" />
                 </label>
                 <input type="file" id="file" style={{ display: "none" }} />
               </div>
-              <button className="userUpdateButton">Update</button>
+              <button className="userUpdateButton">Mettre à jour</button>
             </div>
           </form>
         </div>

@@ -38,9 +38,15 @@ export class Login extends React.Component {
       .then(Response => Response.json())
       .then((data) => {
         //adding Token To the Local Storage : 
+        localStorage.setItem('User', data.User._id)
+        localStorage.setItem('type', data.User.type)
         localStorage.setItem('Token', data.token)
+
+        console.log(localStorage.getItem('User'));
         if (data.token) {
           this.setState({ logged: true })
+
+          
         }
       })
   };
@@ -50,9 +56,11 @@ export class Login extends React.Component {
   render() {
     return (
       <Fragment>
-        {this.state.logged ? <Redirect to="/encaddash" /> : null}
+        {this.state.logged && localStorage.getItem('type') == "ETUDIANT" ? <Redirect to="/studdash" /> : null}
+        {this.state.logged && localStorage.getItem('type') == "ENCADRENT"? <Redirect to="/encaddash" /> : null}
+        {this.state.logged && localStorage.getItem('type') == "DIRECTEUR"? <Redirect to="/dashdirecteur" /> : null}
         <div className="base-container" ref={this.props.containerRef}>
-          <div className="headerr">Login</div>
+          <div className="headerr">Connexion</div>
           <div className="content">
             <div className="image">
               <img src={loginImg} />
@@ -60,13 +68,13 @@ export class Login extends React.Component {
             <div className="form">
               <form onSubmit={this.handleSubmit}>
                 <div className="form-group">
-                  <label htmlFor="username">Email</label>
+                  <label htmlFor="username">E-mail</label>
                   <input type="text" name="username" placeholder="Email"
                     onChange={e => this.email = e.target.value}
                   />
                 </div>
                 <div className="form-group">
-                  <label htmlFor="password">Password</label>
+                  <label htmlFor="password">Mot de passe</label>
                   <input type="password" name="password" placeholder="password"
                     onChange={e => this.password = e.target.value} />
                 </div>
@@ -74,7 +82,7 @@ export class Login extends React.Component {
           </div>
           <div className="footerr">
             <button onClick={this.handleSubmit} type="button" className="btn">
-              Login
+            Connexion
             </button>
           </div>
         </div>

@@ -30,22 +30,22 @@ const ProjectSection = (props) => {
   return (
     <div className="projects-section">
       <div className="projects-section-header">
-        <p>Projects</p>
+        <p>Projets</p>
         <p className="time">  {months[new Date().getMonth()]} ,{date} </p>
       </div>
       <div className="projects-section-line">
         <div className="projects-status">
           <div className="item-status">
             <span className="status-number">45</span>
-            <span className="status-type">In Progress</span>
+            <span className="status-type">En cours</span>
           </div>
           <div className="item-status">
             <span className="status-number">24</span>
-            <span className="status-type">Upcoming</span>
+            <span className="status-type">A venir</span>
           </div>
           <div className="item-status">
             <span className="status-number">62</span>
-            <span className="status-type">Total Projects</span>
+            <span className="status-type">Nombre total de projets</span>
           </div>
         </div>
         <div className="view-actions">

@@ -37,8 +37,8 @@ class SigninPage extends React.Component {
   render() {
     
     const { isLogginActive } = this.state;
-    const current = isLogginActive ? "Register" : "Login";
-    const currentActive = isLogginActive ? "login" : "register";
+    const current = isLogginActive ? "S'inscrire" : "Connexion";
+    const currentActive = isLogginActive ? "Connexion" : "S'inscrire";
     return (
      
       <div className="App">

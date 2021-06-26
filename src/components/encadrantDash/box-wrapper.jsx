@@ -70,10 +70,10 @@ const BoxWrapper = (props) => {
             </div>
             <div className="project-box-content-header">
               <Link to={{ pathname:`/encaddash/connection`, state:{group : task} }}><a> <p className="box-content-header">{task.name}</p></a>   </Link>
-              <p className="box-content-subheader">Tasks Number : {task.tasks.length}</p>
+              <p className="box-content-subheader">Nombre de tâches : {task.tasks.length}</p>
             </div>
             <div className="box-progress-wrapper">
-              <p className="box-progress-header">Progress</p>
+              <p className="box-progress-header">Le progrès</p>
               <div className="box-progress-bar">
                 <span className="box-progress" style={{ width: '50%', backgroundColor: '#4f3ff0' }}></span>
               </div>
@@ -90,7 +90,7 @@ const BoxWrapper = (props) => {
                 </button>
               </div>
               <div className="days-left" style={{ color: '#4f3ff0' }}>
-                2 Days Left
+              2 jours restant
               </div>
             </div>
           </div></div>

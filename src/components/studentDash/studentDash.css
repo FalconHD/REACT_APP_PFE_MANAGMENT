@@ -115,7 +115,7 @@ button {
     margin-left: 30px;
 }
 .top-part {
-    padding: 30px;
+    padding: 20px 12px 0px 0px;
     align-self: flex-end;
 }
 .top-part svg {

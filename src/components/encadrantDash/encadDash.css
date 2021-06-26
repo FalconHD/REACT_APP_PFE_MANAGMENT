@@ -295,6 +295,9 @@ flex-direction: row;
 	 justify-content: center;
 	 align-items: center;
 }
+.fields{
+	width: 200%;
+}
  .app-sidebar-link:hover {
 	 background-color: var(--link-color-hover);
 	 color: var(--link-color-active);
@@ -470,6 +473,15 @@ flex-direction: row;
 	 position: absolute;
 	 width: 0;
 	 height: 0;
+}
+.profile-bttn{
+	padding: 0;
+    border: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    border-left: 2px solid #ddd;
 }
  .star-checkbox label {
 	 width: 24px;
@@ -1144,7 +1156,8 @@ flex-direction: row;
 }
  .team-member {
 	 display: flex;
-	 justify-content: space-between;
+	 justify-content: flex-start;
+	 gap: 10px;
 }
 
  .search-bar {
@@ -2350,7 +2363,8 @@ flex-direction: row;
 }
  .team-member {
 	 display: flex;
-	 justify-content: space-between;
+	 justify-content: flex-start;
+	 gap: 10p
 }
  .main-area {
 	 display: flex;
@@ -3615,7 +3629,8 @@ body{background:lightgrey}
 .sttngs h2
 {letter-spacing:2px;
 	font-family: var(--body-font);
-	margin:20px;color:#000;}
+	margin: 0px 0px 43px 20px;
+	color:#000;}
 
 
 .sttngs .tabordion {
@@ -4076,9 +4091,10 @@ font-size: 19px;}
 }
 
 .space{
-	margin-top: 6px;
-    padding-top: 12px;
     border-top: rgb(204, 0, 0);
+    /* padding-right: 51px; */
+    width: 211px;
+ 
 }
 
 
@@ -4105,7 +4121,7 @@ font-size: 19px;}
 	position: fixed;
     top: 44%;
     left: 30.1%;
-    width: 300px;
+    width: 348px;
     border: 3px solid #e2e2e2;
     border-radius: 32px;
     /* border-bottom: none; */

@@ -1,41 +1,24 @@
-import React, { useState,useEffect } from 'react';
-import Modal from '../encadrantDash/model';
-const HeaderStud = () => {
 
-  const [userLogged, setUserLogged] = useState({})
-  const [showModal, setShowModal] = useState(false)
 
-  const getUser = async (id)=>{
-    let res = await fetch(`http://localhost:5000/auth/users/${id}`,{
-      method : "GET",
-      headers:{
-        'Content-type' : 'application/json',
-        'Authorization' : `Bearer ${localStorage.getItem('Token')}`
-      },
-    })
+import React,{useState} from 'react';
+import {Link} from 'react-router-dom';
 
-    let {User} = await res.json()
-    console.log(User);
-    setUserLogged(User)
-  }
-  useEffect(() => {
+const HeaderEnDashh = () => {
+  const[showModal,setShowModal]=useState(false)
 
-      let user = localStorage.getItem('User')
-      if(user){
-        getUser(user)
-      } 
+  const [theme, setTheme] = useState("light");
 
-  }, []);
-  const openModal = () => {
-    setShowModal(prev => !prev)
-  }
-  return (
-    <div class="app-header">
-      <div class="app-header-left">
+  const themeToggler = () => {
+    theme === "light" ? setTheme("dark") : setTheme("light");
+  };
+
+    return (  
+      <div class="app-header">
+       <div class="app-header-left">
         <span class="app-icon"></span>
-        <p class="app-name">Mon Projet</p>
+        <Link to="/"><p class="app-name">Mon Projet</p></Link>
         <div class="search-wrapper">
-          <input class="search-input" type="text" placeholder="Rechercher" />
+          <input class="search-input" type="text" placeholder="Rechercher"/>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-search" viewBox="0 0 24 24">
             <defs></defs>
             <circle cx="11" cy="11" r="8"></circle>
@@ -43,8 +26,8 @@ const HeaderStud = () => {
           </svg>
         </div>
       </div>
-      <div class="app-header-right">
-        <button class="mode-switch" title="Switch Theme">
+       <div class="app-header-right">
+        <button class="mode-switch" title="Switch Theme" onClick={() => themeToggler()}>
           <svg class="moon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="24" height="24" viewBox="0 0 24 24">
             <defs></defs>
             <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
@@ -54,14 +37,12 @@ const HeaderStud = () => {
 
 
 
-        <button class="add-btn" title="Add New Project" onClick={openModal}>
+        <button class="add-btn" title="Add New Project" >
           <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
             <line x1="12" y1="5" x2="12" y2="19" />
             <line x1="5" y1="12" x2="19" y2="12" /></svg>
         </button>
-        <Modal showModel={showModal} setShowModal={setShowModal} />
-
-
+    
 
 
 
@@ -75,13 +56,13 @@ const HeaderStud = () => {
             <path d="M13.73 21a2 2 0 0 1-3.46 0" /></svg>
         </button>
         <button class="profile-btn">
-          <img src={userLogged.img && userLogged.img} />
-          <span>{userLogged.name && userLogged.name}</span>
+          <img src="https://image.flaticon.com/icons/png/512/2503/2503707.png" />
+          <span>Directeur</span>
         </button>
       </div>
-
+     
     </div>
-  );
+    );
 }
 
-export default HeaderStud;
+export default HeaderEnDashh;

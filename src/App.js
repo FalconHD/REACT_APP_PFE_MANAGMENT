@@ -24,20 +24,12 @@ function App() {
       <Router>
         <Route path="/" component={Home} exact />
         <Switch>
-          <Route path="/" component={Home} exact />
           <Route path="/singin" component={SigninPage} exact />
           <Route path="/encaddash" component={EncadDash} exact />
           <Route path="/library" component={Library} exact />
           <Route path="/studdash" component={StudDash} exact />
           <Route path="/dashdirecteur" component={Dashdirecteur} exact />
-
-
-
-
-
-
         </Switch>
-
       </Router>
     </div>
   );

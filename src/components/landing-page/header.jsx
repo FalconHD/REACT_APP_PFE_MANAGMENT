@@ -23,14 +23,12 @@ const Header = () => {
         <nav id="nav-bar" class="nav">
           <ul class="nav-list">
             <li class="nav-items">
-              <a class="nav-links" href="#features">Features</a>
+              <a class="nav-links" href="#features">Caractéristiques</a>
             </li>
             <li class="nav-items">
-              <a class="nav-links" href="#how-it-works">How It Works</a>
+              <a class="nav-links" href="#how-it-works">Comment ça fonctionne</a>
             </li>
-            <li class="nav-items">
-              <a class="nav-links" href="#get-started">Get Started</a>
-            </li>
+        
             <li class="nav-items">
             <Link to="/singin"><a class="nav-links nav-link-cta" href="">Login</a></Link>
             </li>

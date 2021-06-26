@@ -1,6 +1,6 @@
 import React from 'react'
 const InfoGroup = (props) => {
-  console.log(props.group);
+  console.log(props.group.leader);
     return ( 
         <div class="test">
   <div class="task-managerr">Gestion PFE</div>
@@ -12,8 +12,9 @@ const InfoGroup = (props) => {
      <div class="side-wrapper">
       <div class="user-profile">
        <img src="https://image.shutterstock.com/image-photo/portrait-smiling-young-college-student-260nw-1192615495.jpg" alt="" class="user-photo"/>
-       <div class="user-name">abdou pas</div>
-       <div class="user-mail">jacob.khan457@gmail.com</div>
+       <div class="user-name">{props.group.leader.name}</div>
+       <div class="user-mail">{props.group.leader.email}
+</div>
       </div>
       <div class="user-notification">
        <div class="notify">
@@ -37,30 +38,32 @@ const InfoGroup = (props) => {
       <div class="task-status">
        <div class="task-stat">
         <div class="task-number">12</div>
-        <div class="task-condition">Completed</div>
-        <div class="task-tasks">tasks</div>
+        <div class="task-condition">Complété
+</div>
+        <div class="task-tasks">Tâches</div>
        </div>
        <div class="task-stat">
         <div class="task-number">22</div>
-        <div class="task-condition">To do</div>
-        <div class="task-tasks">tasks</div>
+        <div class="task-condition">Faire</div>
+        <div class="task-tasks">Tâches</div>
        </div>
        <div class="task-stat">
-        <div class="task-number">243</div>
-        <div class="task-condition">All</div>
-        <div class="task-tasks">completed</div>
+        <div class="task-number">{props.group.tasks.length}</div>
+        <div class="task-condition">Tout
+</div>
+        <div class="task-tasks">complété</div>
        </div>
       </div>
      </div>
   
      <div class="side-wrapper">
-      <div class="project-title">les nombres</div>
+      <div class="project-title">LES membres</div>
       <div class="team-member">
-       <img src="https://images.unsplash.com/flagged/photo-1574282893982-ff1675ba4900?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" alt="" class="members"/>
-       <img src="https://assets.codepen.io/3364143/Screen+Shot+2020-08-01+at+12.24.16.png" alt="" class="members"/>
-       <img src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="" class="members"/>
-       <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=998&q=80" alt="" class="members"/>
-       <img src="https://images.unsplash.com/photo-1541647376583-8934aaf3448a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" alt="" class="members"/>
+       {
+         props.group.member.map((m)=>(
+          <img src={m.img} alt="" class="members"/>
+          ))
+       }
       </div>
      </div>
     </div>

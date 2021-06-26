@@ -67,7 +67,7 @@ const useStyles = makeStyles((theme) => ({
   
 
 
-const SettingEncad = () => {
+const SettingStudent = () => {
     const classes = useStyles();
     const theme = useTheme();
   const [personName, setPersonName] = React.useState([]);
@@ -90,16 +90,16 @@ const SettingEncad = () => {
   };
 
 
-  const [name, setName] = React.useState(' Adil ');
-  const [namee, setNamee] = React.useState(' SOUFI ');
-  const [mail, setMail] = React.useState('Adil@soufi@fsth.edu ');
+  const [name, setName] = React.useState(' Chaymae ');
+  const [namee, setNamee] = React.useState(' Assmer ');
+  const [mail, setMail] = React.useState('Chaymae@Assmer@fsth.edu ');
     return (  
           
      
         
      
   <div className="sttngs">
-    <h2>LES PARAMÈTRES D'ENCADRANT(E)</h2>
+    <h2>LES PARAMÈTRES D'ETUDIANT(E)</h2>
 <div className="tabordion">
   <section> 
     <input className="t" type="radio" name="sections" id="option1" checked/>
@@ -197,7 +197,7 @@ const SettingEncad = () => {
   
     </form></div>
     <div className="fromsetting"><form className={classes.root} noValidate autoComplete="off">
-      <TextField id="standard-basic" label="CNI" />
+      <TextField id="standard-basic" label="CNI / CNE " />
   
     </form></div>
 
@@ -334,7 +334,7 @@ const SettingEncad = () => {
         className={classes.button}
         startIcon={<SaveIcon />}
       >
-        Mettre à jour 
+         
       </Button>
     </article>
   </section>
@@ -351,4 +351,4 @@ const SettingEncad = () => {
     );
 }
  
-export default SettingEncad;
+export default SettingStudent;

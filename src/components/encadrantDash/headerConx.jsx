@@ -9,7 +9,7 @@ const HeaderConx = () => {
    <Link to="/encaddash/connection/calender"><a><div className="inbox-calendar">
     <input type="checkbox" className="inbox-calendar-checkbox"/>
      <div className="toggle-page">
-      <span>Inbox</span>
+      <span>Boite</span>
      </div>
      <div className="layer"></div>
     </div></a> </Link>

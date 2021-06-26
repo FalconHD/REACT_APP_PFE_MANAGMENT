@@ -36,7 +36,7 @@ export default function WidgetLg() {
               alt=""
               className="widgetLgImg"
             />
-            <span className="widgetLgName">Gestion de projests</span>
+            <span className="widgetLgName">Application de gestion des utilisateurs Avec PHP</span>
           </td>
           <td className="widgetLgDate">2 Jun 2021</td>
           <td className="widgetLgAmount">EEA</td>
@@ -51,7 +51,8 @@ export default function WidgetLg() {
               alt=""
               className="widgetLgImg"
             />
-            <span className="widgetLgName">Gestion de projests</span>
+            <span className="widgetLgName">Gestion du parck informatique en ASP
+</span>
           </td>
           <td className="widgetLgDate">2 Jun 2021</td>
           <td className="widgetLgAmount">MI</td>
@@ -66,7 +67,8 @@ export default function WidgetLg() {
               alt=""
               className="widgetLgImg"
             />
-            <span className="widgetLgName">Gestion de projests</span>
+            <span className="widgetLgName">Application de gestion des enseignants
+</span>
           </td>
           <td className="widgetLgDate">2 Jun 2021</td>
           <td className="widgetLgAmount">STT</td>

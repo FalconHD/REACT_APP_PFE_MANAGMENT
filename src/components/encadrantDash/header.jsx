@@ -2,16 +2,43 @@
 import Popup from './model';
 import Modal from './model';
 
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import {Link} from 'react-router-dom';
 
 const HeaderEnDash = () => {
-  const[showModal,setShowModal]=useState(false)
+  
+
+  const [theme, setTheme] = useState("light");
+
+  
+  const [userLogged, setUserLogged] = useState({})
+  const [showModal, setShowModal] = useState(false)
+
+
   const openModal=()=>{
     setShowModal(prev => !prev)
   }
-  const [theme, setTheme] = useState("light");
+  const getUser = async (id)=>{
+    let res = await fetch(`http://localhost:5000/auth/users/${id}`,{
+      method : "GET",
+      headers:{
+        'Content-type' : 'application/json',
+        'Authorization' : `Bearer ${localStorage.getItem('Token')}`
+      },
+    })
 
+    let {User} = await res.json()
+    console.log(User);
+    setUserLogged(User)
+  }
+  useEffect(() => {
+
+      let user = localStorage.getItem('User')
+      if(user){
+        getUser(user)
+      } 
+
+  }, []);
   const themeToggler = () => {
     theme === "light" ? setTheme("dark") : setTheme("light");
   };
@@ -22,7 +49,7 @@ const HeaderEnDash = () => {
         <span class="app-icon"></span>
         <Link to="/"><p class="app-name">Mon Projet</p></Link>
         <div class="search-wrapper">
-          <input class="search-input" type="text" placeholder="Search"/>
+          <input class="search-input" type="text" placeholder="Rechercher"/>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-search" viewBox="0 0 24 24">
             <defs></defs>
             <circle cx="11" cy="11" r="8"></circle>
@@ -60,8 +87,8 @@ const HeaderEnDash = () => {
             <path d="M13.73 21a2 2 0 0 1-3.46 0" /></svg>
         </button>
         <button class="profile-btn">
-          <img src="https://assets.codepen.io/3306515/IMG_2025.jpg" />
-          <span>Abdou</span>
+          <img src={userLogged.img && userLogged.img} />
+          <span>{userLogged.name && userLogged.name}</span>
         </button>
       </div>
      

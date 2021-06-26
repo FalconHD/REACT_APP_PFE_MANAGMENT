@@ -13,7 +13,7 @@ const MainArea = (props) => {
                     <HeaderConx />
                     <Switch>
                          <div className="main-containerr">
-                              <Route path="/encaddash/connection/" exact> <Inbox />  </Route>
+                              <Route path="/encaddash/connection/" exact> <Inbox group={props.group} />  </Route>
                               <Route path="/encaddash/connection/calender" exact><CalenderConx group={props.group} /> </Route>
                          </div>
                     </Switch>

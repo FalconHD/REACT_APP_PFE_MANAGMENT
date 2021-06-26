@@ -26,12 +26,12 @@ const RightBar = () => {
 
       </div></div>
      
-      <div className="wewe">Meeting</div>
+      <div className="wewe">Réunion</div>
       <div className="right-content">
         <div className="task-box yellow">
           <div className="description-task">
             <div className="time">08:00 - 09:00 AM</div>
-            <div className="task-name">Rapport Review</div>
+            <div className="task-name">Examen des rapports</div>
           </div>
           <div className="more-button"></div>
           <div className="members">
@@ -52,7 +52,8 @@ const RightBar = () => {
         <div className="task-box blue">
           <div className="description-task">
             <div className="time">10:00 - 11:00 AM</div>
-            <div className="task-name">Design Meeting</div>
+            <div className="task-name">Réunion de conception
+</div>
           </div>
           <div className="more-button"></div>
           <div className="members">
@@ -70,7 +71,8 @@ const RightBar = () => {
         <div className="task-box red">
           <div className="description-task">
             <div className="time">01:00 - 02:00 PM</div>
-            <div className="task-name">Team Meeting</div>
+            <div className="task-name">Réunion d'équipe
+</div>
           </div>
           <div className="more-button"></div>
           <div className="members">
@@ -91,7 +93,8 @@ const RightBar = () => {
         <div className="task-box green">
           <div className="description-task">
             <div className="time">03:00 - 04:00 PM</div>
-            <div className="task-name">Release Event</div>
+            <div className="task-name">Événement de sortie
+</div>
           </div>
           <div className="more-button"></div>
           <div className="members">
@@ -115,7 +118,8 @@ const RightBar = () => {
         <div className="task-box blue">
           <div className="description-task">
             <div className="time">08:00 - 09:00 PM</div>
-            <div className="task-name">Release Event</div>
+            <div className="task-name">Événement de sortie
+</div>
           </div>
           <div className="more-button"></div>
           <div className="members">
@@ -139,7 +143,8 @@ const RightBar = () => {
         <div className="task-box yellow">
           <div className="description-task">
             <div className="time">11:00 - 12:00 PM</div>
-            <div className="task-name">Practise</div>
+            <div className="task-name">Entraine toi
+</div>
           </div>
           <div className="more-button"></div>
           <div className="members">

@@ -50,6 +50,8 @@ export class Register extends React.Component {
         .then((data) => {
           console.log(data);
           //adding Token To the Local Storage : 
+          localStorage.setItem('User', data.User._id)
+          localStorage.setItem('type', data.User.type)
           localStorage.setItem('Token', data.token)
           if (data.token) {
             this.setState({ logged: true })
@@ -70,7 +72,7 @@ export class Register extends React.Component {
         {this.state.logged ? <Redirect to="/encaddash" /> : null}
 
         <div className="base-container" ref={this.props.containerRef}>
-          <div className="headerr">Register</div>
+          <div className="headerr">S'inscrire</div>
           <div className="content">
             <div className="image">
               <img src={loginImg} />
@@ -78,13 +80,13 @@ export class Register extends React.Component {
             <div className="form">
               <form onSubmit={this.handleSubmit} action="#">
                 <div className="form-group">
-                  <label htmlFor="email">Email</label>
-                  <input type="text" name="email" placeholder="fullname@etu.uae.ac.ma"
+                  <label htmlFor="email">E-mail</label>
+                  <input type="text" name="email" placeholder="nom-prénom@etu.uae.ac.ma"
                     onChange={e => this.state.email = e.target.value} />
 
                 </div>
                 <div className="loginF">
-                  <label htmlFor="Type" className="space">Register As:</label>
+                  <label htmlFor="Type" className="space">S'inscrire comme:</label>
                   <select onChange={e => this.state.type = e.target.value} name="type" id="type" className="selectRegister">
                    
                     <option className="none" value="ENCADRENT">Encadrant</option>
@@ -93,14 +95,14 @@ export class Register extends React.Component {
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="password">Password</label>
-                  <input type="text" name="password" placeholder="password"
+                  <label htmlFor="password">Mot de passe</label>
+                  <input type="password" name="password" placeholder="Le mot de passe"
                     onChange={e => this.state.password = e.target.value} />
                 </div>
               
                 <div className="form-group">
-                  <label htmlFor="password_confime">Confirm Password</label>
-                  <input type="text" name="password_confime" placeholder="confirm Password"
+                  <label htmlFor="password_confime">Confirmez le mot de passe</label>
+                  <input type="password" name="password_confime" placeholder="Confirmez le mot de passe"
                     onChange={e => this.state.confirm = e.target.value} />
                 </div>
               </form></div>
@@ -108,7 +110,7 @@ export class Register extends React.Component {
           </div>
           <div className="footerr">
             <button onClick={this.handleSubmit} type="submit" className="btn" value="Submit">
-              Register
+            S'inscrire
             </button>
           </div>
         </div>

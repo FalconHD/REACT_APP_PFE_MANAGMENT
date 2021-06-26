@@ -89,8 +89,8 @@
     font-size: 21px;
     font-weight: 500;
     color: #fff;
-    margin-right: 3em;
-    margin-left: 3em;
+    margin-right: 2em;
+    margin-left: 2em;
 }
 .btn {
     font-size: 21px;
@@ -173,6 +173,13 @@
 /*.base-container .footerr {*/
  /*margin-top: 3em;}*/
 
+
+
+ /* login */
+
+
+
+ 
 .loginF{
     display: flex;
     height: 19px;

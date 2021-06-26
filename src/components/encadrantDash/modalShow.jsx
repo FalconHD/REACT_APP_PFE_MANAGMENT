@@ -184,7 +184,7 @@ const ModalShow = (props) => {
       <form className={classes.root} className="space" noValidate autoComplete="off">
 
 
-        <TextField id="standard-basic" label="Le Titre De Projet" onChange={(e) => { setGroup({ ...group, name: e.target.value, subject: e.target.value }) }} />
+        <TextField className="fields" id="standard-basic" label="Le Titre De Projet" onChange={(e) => { setGroup({ ...group, name: e.target.value, subject: e.target.value }) }} />
 
 
       </form>

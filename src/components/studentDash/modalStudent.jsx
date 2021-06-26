@@ -60,8 +60,8 @@ const Modalstudent =(props)=>{
 
 
     <div class="">
-  <button className="bbtn1 btnn2"  onClick={()=> props.setModale(false)} >save </button> 
-  <button className="bbtn2 btnn1"  onClick={()=> props.setModale(false)} >close</button>
+  <button className="bbtn1 btnn2"  onClick={()=> props.setModale(false)} >sauvegarder  </button> 
+  <button className="bbtn2 btnn1"  onClick={()=> props.setModale(false)} >Fermer</button>
  
  
 </div>

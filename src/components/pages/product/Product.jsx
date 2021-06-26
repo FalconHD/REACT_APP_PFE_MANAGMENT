@@ -8,19 +8,19 @@ export default function Product() {
   return (
     <div className="product">
       <div className="productTitleContainer">
-        <h1 className="productTitle">Projet</h1>
+        <h1 className="productTitle"> Le Projet</h1>
         <Link to={"/dashdirecteur/newproject"}>
-          <button className="productAddButton">Create</button>
+          <button className="productAddButton">Créer</button>
         </Link>
       </div>
       <div className="productTop">
           <div className="productTopLeft">
-              <Chart data={productData} dataKey="Sales" title="Sales Performance"/>
+              <Chart data={productData} dataKey="activites" title="Sales Performance"/>
           </div>
           <div className="productTopRight">
               <div className="productInfoTop">
                   <img src="https://bubbleplan.net/blog/wp-content/uploads/2018/03/OLAZ6A0.jpg" alt="" className="productInfoImg" />
-                  <span className="productName">Gestion Des Projets</span>
+                  <span className="productName">App Gestion Des Projets</span>
               </div>
               <div className="productInfoBottom">
                   <div className="productInfoItem">
@@ -45,7 +45,7 @@ export default function Product() {
       <div className="productBottom">
           <form className="productForm">
               <div className="productFormLeft">
-                  <label>Project Name</label>
+                  <label>Nom du projet</label>
                   <input type="text" placeholder="  " />
                   <label>Filier</label>
                   <select name="inStock" id="idStock"> 
@@ -68,7 +68,7 @@ export default function Product() {
                       </label>
                       <input type="file" id="file" style={{display:"none"}} />
                   </div>
-                  <button className="productButton">Update</button>
+                  <button className="productButton">Mettre à jour</button>
               </div>
           </form>
       </div>

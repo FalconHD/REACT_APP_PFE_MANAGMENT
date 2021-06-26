@@ -41,8 +41,7 @@ const ModalLibrary = (props) => {
               <div className="modal-info-header">
                 <h1>Description</h1>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                </p>
+                Chaque année, et pour chaque filière, les étudiants de la faculté des sciences et techniques d’Alhoceima réalisent des projets de fin d'année en groupe (binôme, trinôme…) Sous l'encadrement d'un professeur et commettant des étudiants de la filière MI on a suggéré de créer une application web qui va faciliter au chef de département le suivie du projet de chaque binôme avec son encadrant et pour gérer la relation entre l’étudiant et son encadrant toute au long de la période d’encadrement soit au niveau des rendez-vous soit au niveau des comptes rendus. Cette plateforme est destinée pour tous les étudiants de la faculté ayant un projet de fin d’année.                </p>
               </div>
               <div className="desc-actions">
                 <button className="btn-book">Telecharger </button>
@@ -69,12 +68,33 @@ const ModalLibrary = (props) => {
                    <div className="profile-img-wrapper">
                      <img src="https://source.unsplash.com/featured/1200x900/?woman,cool" alt="Review"/>
                    </div>
-                   <p>Jessica Finnick</p>
+                   <p>Imane Pas</p>
                  </div>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                 <p>Le meilleur projet pour l'année 2021</p>
                </div>
             </div>
-          
+            <div className="card-wrapper">
+               <div className="card">
+                 <div className="profile-info-wrapper">
+                   <div className="profile-img-wrapper">
+                     <img src="https://source.unsplash.com/featured/1200x900/?woman,cool" alt="Review"/>
+                   </div>
+                   <p>yousef  Pas</p>
+                 </div>
+                 <p>Le meilleur projet pour l'année 2021</p>
+               </div>
+            </div>
+            <div className="card-wrapper">
+               <div className="card">
+                 <div className="profile-info-wrapper">
+                   <div className="profile-img-wrapper">
+                     <img src="https://source.unsplash.com/featured/1200x900/?woman,cool" alt="Review"/>
+                   </div>
+                   <p>othman Pas</p>
+                 </div>
+                 <p>Le meilleur projet pour l'année 2021</p>
+               </div>
+            </div>
       
            </div>
           <button className="btn btn-close"  onClick={()=>{props.setTrigger(false);}} >

@@ -2,7 +2,7 @@ import React from 'react';
 import ModalLibrary from '../encadrantDash/modallibrary';
 import { useState } from 'react';
 
-const AppMainLeft = (props) => {
+const AppMainLeftStu = (props) => {
   const [openModalL, setOpenModalL] = useState(false)
 
   
@@ -159,4 +159,4 @@ const AppMainLeft = (props) => {
      );
 }
  
-export default AppMainLeft;
+export default AppMainLeftStu;

@@ -1,5 +1,5 @@
 import React from 'react';
-const AppMainRight = () => {
+const AppMainRightStu = () => {
     return ( 
       <div class="app-main-right cards-area">
       <div class="app-main-right-header">
@@ -125,4 +125,4 @@ const AppMainRight = () => {
      );
 }
  
-export default AppMainRight;
+export default AppMainRightStu;
